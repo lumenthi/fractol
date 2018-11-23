@@ -3,10 +3,10 @@
 #                                                         :::      ::::::::    #
 #    Makefile                                           :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
-#    By: lumenthi <marvin@42.fr>                    +#+  +:+       +#+         #
+#    By: lumenthi <lumenthi@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2017/12/22 14:06:43 by lumenthi          #+#    #+#              #
-#    Updated: 2018/06/22 11:01:56 by lumenthi         ###   ########.fr        #
+#    Updated: 2018/11/23 16:37:30 by lumenthi         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -27,7 +27,10 @@ MLX = $(MLXDIR)/libmlx.a
 LIBFT = $(LIBDIR)/libft.a
 LIBFT_OBJ = $(LIBDIR)/objs
 
-SRCS = fractol.c
+SRCS = fractol.c \
+		julia.c \
+		mandelbrot.c \
+		burningship.c
 
 SOURCES = $(addprefix $(SRCDIR)/, $(SRCS))
 INCLUDES = $(addprefix -I, $(INCDIR))

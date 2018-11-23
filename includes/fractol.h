@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   fractol.h                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: lumenthi <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: lumenthi <lumenthi@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/06/22 10:48:14 by lumenthi          #+#    #+#             */
-/*   Updated: 2018/07/03 18:02:52 by lumenthi         ###   ########.fr       */
+/*   Updated: 2018/11/23 16:37:25 by lumenthi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -74,5 +74,30 @@ typedef struct		s_mlx
 	t_image			img;
 	t_prop			prop;
 }					t_mlx;
+
+/*
+** fractol.c
+*/
+
+void				add_pixel(t_mlx d, int x, int y, int color);
+int					rgb_to_int(int r, int g, int b);
+
+/*
+** mandelbrot.c
+*/
+
+void				draw_mandelbrot(t_mlx d);
+
+/*
+** julia.c
+*/
+
+void				draw_julia(t_mlx d);
+
+/*
+** burningship.c
+*/
+
+void				draw_burningship(t_mlx d);
 
 #endif
